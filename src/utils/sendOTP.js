@@ -32,7 +32,7 @@ const sendOtp = async (phoneNumber) => {
     );
    
 
-    //return confirmationResult;
+   return confirmationResult;
   } catch (error) {
     console.log(error)
     throw error;

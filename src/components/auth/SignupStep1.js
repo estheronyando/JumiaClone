@@ -76,14 +76,14 @@ function SignupStep1({ handleActions }) {
         toastMessage("You are already registered. Please login", "info");
       } else {
         console.log("im here")
-        // const confirmationResult = await sendOTP(phoneNum.value);
-        // dispatch(setOTPResult(confirmationResult));
-        // dispatch(setMobileNumber(phoneNum.value));
+        const confirmationResult = await sendOTP(phoneNum.value);
+        dispatch(setOTPResult(confirmationResult));
+        dispatch(setMobileNumber(phoneNum.value));
         setLoading(false);
         handleActions({
           openStep1: false,
-          openStep2: true,
-          openOTPVerify: false,
+          openStep2: false,
+          openOTPVerify: true,
         });
       }
     } catch (error) {
