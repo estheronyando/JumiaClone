@@ -18,7 +18,7 @@ const sendOtp = async (phoneNumber) => {
     {
       size: "invisible",
       callback: (response) => {},
-      //defaultCountry: "KE",
+      defaultCountry: "KE",
     },
     auth
   );
