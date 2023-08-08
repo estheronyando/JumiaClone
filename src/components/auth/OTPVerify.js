@@ -83,13 +83,9 @@ function OTPVerify({
       const res = await axios.post("/accounts/login-with-phone", {
         phone: phoneNumber,
       },{
-<<<<<<< HEAD
 
         withCredentials:true,
 
-=======
-        withCredentials: true,
->>>>>>> 6e772e7d187f49cfcdbede4d8709fc499a33f80f
       });
 
       const { isAuth, user } = await authentication();
