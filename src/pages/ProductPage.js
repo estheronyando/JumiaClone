@@ -113,10 +113,10 @@ function ProductPage() {
               </span>
             </Box>
             <Typography>
-              <span className={classes.price}>₹{product.price.cost}</span>
+              <span className={classes.price}>Ksh{product.price.cost}</span>
               &nbsp;&nbsp;&nbsp;
               <span className={classes.greyTextColor}>
-                <strike>₹{product.price.mrp}</strike>
+                <strike>Ksh{product.price.mrp}</strike>
               </span>
               &nbsp;&nbsp;&nbsp;
               <span style={{ color: "#388E3C" }}>

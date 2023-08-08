@@ -88,10 +88,10 @@ const CartItem = ({ item }) => {
               </span>
             </Typography>
             <Typography style={{ margin: "20px 0", color: "#000" }}>
-              <span className={classes.price}>₹{item.price.cost}</span>
+              <span className={classes.price}>Ksh{item.price.cost}</span>
               &nbsp;&nbsp;&nbsp;
               <span className={classes.greyTextColor}>
-                <strike>₹{item.price.mrp}</strike>
+                <strike>Ksh{item.price.mrp}</strike>
               </span>
               &nbsp;&nbsp;&nbsp;
               <span style={{ color: "#388E3C" }}>

@@ -74,27 +74,27 @@ const TotalView = ({ page = "cart" }) => {
       <Box className={clsx(classes.header, classes.container)}>
         <Typography>
           Price ({cartItems?.length} item)
-          <span className={classes.price}>₹{price}</span>
+          <span className={classes.price}>Ksh{price}</span>
         </Typography>
         {page === "cart" && (
           <Typography>
-            Discount<span className={classes.price}>-₹{discount}</span>
+            Discount<span className={classes.price}>-Ksh{discount}</span>
           </Typography>
         )}
         <Typography>
           Delivery Charges
           <span className={classes.price}>
-            {deliveryCharges > 0 ? "₹40" : "FREE"}{" "}
+            {deliveryCharges > 0 ? "Ksh40" : "FREE"}{" "}
           </span>
         </Typography>
         <Typography className={classes.totalAmount}>
           {page === "checkout" ? "Total Payable" : "Total Amount"}
           <span className={classes.price}>
-            ₹{price - discount + deliveryCharges}
+            Ksh{price - discount + deliveryCharges}
           </span>
         </Typography>
         <Typography style={{ fontSize: 16, color: "green" }}>
-          You will save ₹{discount - deliveryCharges} on this order
+          You will save Ksh{discount - deliveryCharges} on this order
         </Typography>
       </Box>
     </Box>

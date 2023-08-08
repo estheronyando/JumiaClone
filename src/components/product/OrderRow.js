@@ -88,7 +88,7 @@ function OrderRow({ order }) {
             </Grid>
             <Grid item lg={2} md={2} sm={3} xs={4} className={classes.centerItems}>
               {/* Price */}
-              <span className={classes.price}>₹{item.price}</span>
+              <span className={classes.price}>Ksh{item.price}</span>
             </Grid>
             <Grid item lg={2} md={2} sm={3} xs={12} className={classes.paymentDetails}>
               {/* Payment Mode */}

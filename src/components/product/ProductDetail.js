@@ -62,12 +62,12 @@ const ProductDetail = ({ product }) => {
         </Typography>
         <Typography>
           <Badge className={classes.badge} />
-          Purchase this Furniture or Appliance and Get Extra ₹500 Off on Select
+          Purchase this Furniture or Appliance and Get Extra KSH500 Off on Select
           ACs
         </Typography>
         <Typography>
           <Badge className={classes.badge} />
-          Partner OfferExtra 10% off upto ₹500 on next furniture purchase
+          Partner OfferExtra 10% off upto Ksh500 on next furniture purchase
         </Typography>
       </Box>
       <Table>
@@ -79,7 +79,7 @@ const ProductDetail = ({ product }) => {
               style={{ fontWeight: 600 }}
             >
               Delivery by {date.toDateString()} |{" "}
-              {Number(product.price.cost) > 500 ? "Free" : "₹40"}  
+              {Number(product.price.cost) > 500 ? "Free" : "Ksh40"}  
             </TableCell>
           </TableRow>
           <TableRow className={classes.smallText}>
@@ -91,7 +91,7 @@ const ProductDetail = ({ product }) => {
             <TableCell className={clsx(classes.smallText, classes.borderNone)}>
               <span style={{ color: "#2874f0" }}>SuperComNet</span>
               <Typography>GST invoice available</Typography>
-              <Typography>View more sellers starting from ₹329</Typography>
+              <Typography>View more sellers starting from Ksh329</Typography>
             </TableCell>
           </TableRow>
           <TableRow>
